@@ -18,5 +18,5 @@ test = pd.DataFrame({'age':age,'gender':gender,
                      'kcm':kcm,'troponin':troponin},index=[0])
 
 import pickle
-model = pickle.load(open("C:\\Users\\DELL\\Downloads\\Heart Attack.pkl",'rb'))
+model = pickle.load(open("Heart Attack.pkl",'rb'))
 st.write(model.predict(test))
