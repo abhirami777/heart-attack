@@ -16,7 +16,7 @@ test = pd.DataFrame({'age':age,'gender':gender,
                      'pressurelow ':pressurelow ,
                      'glucose':glucose,
                      'kcm':kcm,'troponin':troponin},index=[0])
-
+st.button("submit")
 import pickle
-model = pickle.load(open("Heart Attack.pkl",'rb'))
+model = pickle.load(open("Heart Attack (1).pkl",'rb'))
 st.write(model.predict(test))
